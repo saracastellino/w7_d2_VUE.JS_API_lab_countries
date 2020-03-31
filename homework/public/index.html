@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easy money converter</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+    <div id="app">
+     <h1>Superfast Money Converter</h1>
+        <h2>Current rates</h2>
+        <!-- <select id="currency_select" v-model="selectedCurrency">
+            <option disabled value="">Select a Currency</option>
+            <option v-for="(rate, currency) in currencies.rates" :key="currency" :value="currency">{{currency}}</option>
+        </select> -->
+
+        <!-- <ul id="v-for-rates" class="demo">
+            <li v-for="currency in rates.currency">
+                 {{ currency }}
+            </li>
+          </ul> -->
+           <!-- <ul id="v-for-rates" class="demo">
+            <li v-for="rate in rates">
+                 {{ displayRates }}
+            </li>
+          </ul> -->
+          <div>
+            <select v-model="currencies">
+              <option disabled>Select Currency</option>
+              <option value="1">EUR</option>
+              <option v-for="(currency, key) in currencies" :value="currency">{{ key }}</option>
+            </select>
+          </div>
+    </div>
